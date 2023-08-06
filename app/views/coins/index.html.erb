@@ -1,14 +1,61 @@
-<p style="color: green"><%= notice %></p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TikTok Coins</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="navbar">
+    <div>
+      <i class="fab fa-tiktok"></i> TikTok
+    </div>
+    <div>
+      <a href="#" class="btn btn-primary">+ Sign Upload</a>
+      <a href="#" class="btn btn-secondary"><i class="far fa-envelope"></i> Message</a>
+    </div>
+  </div>
 
-<h1>Coins</h1>
+  <h2>Recharge</h2>
+  <div class="person">
+    <input type="text" class="username-input" placeholder="Enter username">
+  </div>
 
-<div id="coins">
-  <% @coins.each do |coin| %>
-    <%= render coin %>
-    <p>
-      <%= link_to "Show this coin", coin %>
-    </p>
-  <% end %>
-</div>
+  <div class="coin-box">
+    <div class="coin-box">
+    <div class="coin">
+      <i class="fas fa-coins icon"></i>
+      <div class="amount">$70</div>
+    </div>
+    <div class="coin">
+      <i class="fas fa-coins icon"></i>
+      <div class="amount">$350</div>
+    </div>
+    <div class="coin">
+      <i class="fas fa-coins icon"></i>
+      <div class="amount">$700</div>
+    </div>
+    <div class="coin">
+      <i class="fas fa-coins icon"></i>
+      <div class="amount">$1400</div>
+    </div>
+    <div class="coin">
+      <i class="fas fa-coins icon"></i>
+      <div class="amount">$7000</div>
+    </div>
+    <div class="coin">
+      <i class="fas fa-coins icon"></i>
+      <div class="amount">$17,500</div>
+    </div>
+  </div>
 
-<%= link_to "New coin", new_coin_path %>
+  
+
+    <div class="coin">
+      <i class="fas fa-coins icon"></i>
+      <div class="amount">Custom</div>
+      <!-- Add JavaScript code to handle click and create a box to enter amount -->
+    </div>
+  </div>
+
+</body>
+</html>
